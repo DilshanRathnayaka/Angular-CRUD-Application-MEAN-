@@ -1,0 +1,21 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.right{
+    padding-right: 2rem;
+  
+}
+a{
+    text-decoration: none;
+    padding-left: 1rem; 
+    color: black;
+}
+a:hover{
+    color: blue;
+}
+.left{
+    padding-left: 1rem;
+    display: flex;
+    column-gap: 2rem;
+}

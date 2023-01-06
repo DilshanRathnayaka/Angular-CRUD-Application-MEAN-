@@ -1,0 +1,15 @@
+<form class="form" (ngSubmit)="updateProduct()">
+    <label>
+      Name :
+    </label>  <input type="text"  name="name" [(ngModel)]="product.name" value={{product.name}}/>
+    <br />
+    <label >
+      Price :
+    </label>  <input type="number"  name="price" [(ngModel)]="product.price" value={{product.price}} />
+    <br />
+    <label >
+      Discription :
+    </label> <input type="text" name="disc"  [(ngModel)]="product.disc" value={{product.disc}}/>
+    <br />
+    <button class="btn" type="submit">Update</button>
+  </form>

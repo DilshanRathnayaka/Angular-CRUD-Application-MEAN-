@@ -1,0 +1,48 @@
+
+<div class="Main"><form class="form"  (ngSubmit)="createProduct()">
+  <label>
+    Name :
+  </label>  <input type="text" [(ngModel)]="name" name="name" />
+  <br />
+  <label >
+    Price :
+  </label>  <input type="number" [(ngModel)]="price" name="price" />
+  <br />
+  <label >
+    Discription :
+  </label> <input type="text" [(ngModel)]="disc" name="disc" />
+  <br />
+  <button class="btn" type="submit">Add Product</button>
+</form>
+
+
+
+
+
+
+<div class="card">
+    <div *ngFor="let item of product">
+      <div class="card1">      <div class="div">Product : {{item.name}}</div>  
+      <div class="div2">Price : {{item.price}}</div> 
+      <div class="div3">Description : {{item.disc}}</div> 
+      <div class="butn1">      <div>  <button (click)="deleteProduct(item._id)">Delete</button></div>
+      <div ><button [routerLink]="['/second', item._id]">Update</button></div></div></div>
+
+
+    
+
+    
+    
+   
+    </div>
+   
+</div></div>
+
+
+
+
+     
+  
+
+
+  
